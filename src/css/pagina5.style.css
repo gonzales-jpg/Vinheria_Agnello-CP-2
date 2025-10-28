@@ -56,7 +56,7 @@ h1 {
 }
 .linhaHorizontal3{
 border: none;
-  height: 163px;
+  height: 82px;
   background-color: rgb(181, 53, 28);
   margin-top: 90px;
 }
@@ -107,7 +107,7 @@ input[type="submit"] {
 
 input[type="submit"] {
     /* troca a cor do botão para azul e a letra para branco */
-    background-color: #007BFF;
+    background-color: rgb(181, 53, 28);
     color: white;
     /* tira a borda do botão */
     border: none;
