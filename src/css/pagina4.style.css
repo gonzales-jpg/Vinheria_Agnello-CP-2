@@ -26,17 +26,6 @@ h1 {
 }
 
 /* Menu horizontal */
-.menu {
-    /* Remove os marcadores da lista */
-  list-style: none;
-  /* Coloca os itens em um linha */
-  display: flex;
-  justify-content: center;
-  /* Centraliza o conteúdo */
-  gap: 25px;
-  /* Espaçamento entre cada elemento */
-  padding: 15px 0;
-}
 
 .menu a {
   text-decoration: none;
@@ -56,7 +45,7 @@ h1 {
 }
 .linhaHorizontal3{
 border: none;
-  height: 180px;
+  height: 98px;
   background-color: rgb(181, 53, 28);
   margin-top: 90px;
 }

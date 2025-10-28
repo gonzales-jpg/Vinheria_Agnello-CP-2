@@ -49,6 +49,17 @@ h1 {
   border-collapse: collapse;
   /* Junta as linhas da tabela como se fosse uma só */
 }
+/* seleciona a primeira coluna da tabela */
+table tr th:first-child {
+  background-color: #f06705;
+  color: white;
+}
+/* seleciona a segunda coluna da tabela */
+table tr th:nth-child(2) {
+  background-color: #8b1e3f; /* vinho escuro */
+  color: white;
+}
+
 /* Vai aplicar a estilização tanto an th quanto aos td que estejam dentro da tabela, pai e filho */
 .tabelas th, .tabelas td {
 /* Primeiro valor do padding significa o espaçamento em cima e embaixo, o segundo nas laterais */
@@ -57,14 +68,15 @@ h1 {
   border: 1px solid #333;
 }
 .titulos{
-    margin: 10px;
+
+    margin: 30px;
     text-align: center;
 }
 .linhaHorizontal2{
-border: none;
-  height: 94px;
+  border: none;
+  height: 73px;
   background-color: rgb(181, 53, 28);
-  margin-top: 200px;
+  margin-top: 110px;
 }
 .copy{
   text-align: center;

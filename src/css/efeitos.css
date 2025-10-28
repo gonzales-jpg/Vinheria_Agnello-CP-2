@@ -18,7 +18,10 @@ ul li:hover a {
 .logo{
     transition: 0.5s ease;
     cursor:pointer;
-
+}
+ul li:active a{
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      /* 2 px para direita, 2px para baixo, 5px de desfoque, cor da sombra, último parametrô é opacidade */
 }
 .logo:hover{
     transform: scale(1.1);
@@ -43,6 +46,60 @@ article a:hover{
 }
 .partePreta{
   background: linear-gradient( #F5D3C1, rgb(181, 53, 28));
+}
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+.menu {
+    /* Remove os marcadores da lista */
+  list-style: none;
+  /* Coloca os itens em um linha */
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conteúdo */
+  gap: 25px;
+  /* Espaçamento entre cada elemento */
+  padding: 15px 0;
+  border: solid, rgb(181, 53, 28), 3px;
+}
+.copy{
+  text-align: center;
+  background-color:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 5px;
+}
+td::selection,
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection{
+    background-color: rgb(181, 53, 28);
+    color:white;
+}
+th::selection{
+    background-color: white;
+    color: rgb(181, 53, 28);
+}
+input:focus{
+    background-color: rgb(181, 53, 28);
+    color: white;
+}
+/* Muda a cor do texto que fica no input antes de digitar alguma coisa, placeholder */
+input:focus::placeholder{
+    color: white;
+}
+#video:visited{
+    color:rgb(181, 53, 28);
+}
+#comprar{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
 
-
+#comprar:hover{
+    background-color:#007BFF;
+    transform: scale(1.1);
 }
