@@ -1,11 +1,11 @@
 # Vinheria Agnello — site estático (HTML + CSS)
 
-Este repositório contém o website público da **Vinheria Agnello**, publicado via GitHub Pages. O projeto reúne landing page e páginas internas com navegação simples, conteúdo institucional, tabela de harmonização e vitrines de rótulos.
+Website público da **Vinheria Agnello**, publicado via GitHub Pages. Este README descreve a arquitetura do projeto, conteúdo e os **efeitos/ animações/ transições** utilizados no front‑end.
 
 > **Demo**
 >
 > ```
-> https://gonzales-jpg.github.io/Vinheria_Agnello/index.html
+> https://gonzales-jpg.github.io/Vinheria_Agnello-CP-2/
 > ```
 
 ---
@@ -23,27 +23,29 @@ Este repositório contém o website público da **Vinheria Agnello**, publicado 
     │   ├── pagina4.html          # Clube dos Vinhos
     │   ├── pagina5.html          # Login/Registrar-se
     │   ├── chatue.pagina.html    # Produto – Chateau Grand Puy Lacoste
-    │   ├── espumante.pagina.html # Prodito - Salton Moscatel
-    │   ├── branco2.pagina.html   # Produto - Concha y Toro Casillero Del Diablo
-    │   ├── branco.pagina.html    # Produto - Sauvignon Blanc
-    │   ├── bordro2.pagina.html   # Produto - Gran Reserva Concha y Toro
-    │   ├── bordo.pagina.html     # Produto - Pérgola Bordô
-    │   ├── rose.pagina.html      # Produto - Casal Garcia Rosé
-    │   └── rose2.pagina.html     # Produto - Toro Loco Rose
+    │   ├── espumante.pagina.html # Produto – Salton Moscatel
+    │   ├── branco2.pagina.html   # Produto – Casillero del Diablo (branco)
+    │   ├── branco.pagina.html    # Produto – Sauvignon Blanc
+    │   ├── bordro2.pagina.html   # Produto – Gran Reserva Concha y Toro
+    │   ├── bordo.pagina.html     # Produto – Pérgola Bordô
+    │   ├── rose.pagina.html      # Produto – Casal Garcia Rosé
+    │   └── rose2.pagina.html     # Produto – Toro Loco Rosé
     │
-    ├── css
+    ├── css/
     │    ├── style.css
     │    ├── pagina1.style.css
     │    ├── pagina2.style.css
     │    ├── pagina3.style.css
     │    ├── pagina4.style.css
     │    ├── pagina5.style.css
+    │    ├── efeitos.css
     │    ├── confirmacao.css
     │    └── comprar.pagina.css
+    │ 
     │
     └── assets/
         └── imgs/
-            ├── casillero-del-diablo.web
+            ├── casillero-del-diablo.webp
             ├── bordo.png
             ├── espumante.jpg
             ├── toro-loco-rose.jpg
@@ -54,93 +56,121 @@ Este repositório contém o website público da **Vinheria Agnello**, publicado 
             ├── Confirmado.gif
             ├── image-0.webp
             ├── rose.jpg
-            ├── vinho-de-mesa-ou-vinho-fino-2-blog-setembro-22
+            ├── vinho-de-mesa-ou-vinho-fino-2-blog-setembro-22.jpg
             └── LOGO.png
 ```
 
-Observação: as folhas de estilo (CSS) estão versionadas no repositório; a barra de linguagens do GitHub indica HTML e CSS como tecnologias predominantes.
+> Observação: projeto **estático**, sem back‑end.
 
 ---
 
-##  Navegação & seções
+## Navegação & seções
 
 - **Header** com links: *Clube de Vinhos*, *Sobre Nós*, *Login/Registrar-se*, *Vídeos* (YouTube), *Carrinho* e *Tabela de Harmonização*.
-- **Home** com imagem de capa e a seção **“Mais vendidos”** (grade de produtos).
+- **Home** com imagem de **capa** e seção **“Mais vendidos”** (grade de produtos).
 - **Rodapé** com aviso de direitos autorais.
 
 ---
 
-##  Conteúdo institucional (resumo)
+## Conteúdo institucional (resumo)
 
-A Vinheria Agnello é um negócio familiar de São Paulo, com mais de 15 anos no mercado, que cresceu mantendo atendimento consultivo. A gestão é feita por **Giulio** (fundador) e **Bianca** (filha), apoiados por uma equipe enxuta de seis pessoas e por um ERP que integra finanças, compras e estoque. Há cuidado específico com armazenagem para preservar rótulos de maior valor (luz, calor e vibração sob controle).
-
----
-
-##  Clube dos Vinhos (resumo)
-
-Plano com **2 garrafas por mês**, curado pelo sommelier **Rodrigo Colon**, priorizando rótulos com **ótimo custo‑benefício** e vínculo temático — regiões, uvas e estilos. Os envios do clube ocorrem até o **dia 15** de cada mês (o primeiro envio acontece no mês seguinte ao pagamento) e **o cancelamento é livre**. O clube também envia conteúdos sobre o tema do mês e o processo de escolha dos rótulos.
+A Vinheria Agnello é um negócio familiar de São Paulo, com mais de 15 anos no mercado, que cresceu mantendo atendimento consultivo. A gestão é feita por **Giulio** (fundador) e **Bianca** (filha), apoiados por uma equipe de seis pessoas e por um ERP que integra finanças, compras e estoque. Há cuidado específico com armazenagem para preservar rótulos de maior valor (luz, calor e vibração sob controle).
 
 ---
 
-##  Tabela de harmonização (resumo)
+## Clube dos Vinhos (resumo)
+
+Plano com **2 garrafas por mês**, curado pelo sommelier **Rodrigo Colon**, priorizando rótulos com **ótimo custo‑benefício** e vínculo temático (regiões, uvas e estilos). Envios até o **dia 15** de cada mês (primeiro envio no mês seguinte à confirmação do pagamento) e **cancelamento livre**.
+
+---
+
+## Tabela de harmonização (resumo)
 
 - **Espumante Brut** → entradas leves; queijos frescos; frituras  
 - **Sauvignon Blanc** → saladas; peixes; culinária japonesa  
-- **Chardonnay (sem madeira)** → frango grelhado; risotos mais leves  
+- **Chardonnay (sem madeira)** → frango grelhado; risotos leves  
 - **Chardonnay (com madeira)** → massas ao molho branco; carnes brancas  
 - **Pinot Noir** → aves; cogumelos; massas ao molho vermelho  
 - **Merlot** → carnes magras; pizzas; queijos de média intensidade  
 - **Cabernet Sauvignon** → carnes vermelhas; cordeiro  
 - **Malbec** → churrasco; queijos curados; carnes assadas  
-- **Porto / Moscatel** → sobremesas; chocolate; frutas secas  
-
- A lista acima resume a tabela apresentada na página de harmonização do site.
+- **Vinho do Porto / Moscatel** → sobremesas; chocolate; frutas secas  
 
 ---
 
-##  Imagens usadas (pasta `src/assets/imgs/`)
+## Tecnologias
 
-- `vinho-de-mesa-ou-vinho-fino-2-blog-setembro-22.jpg` – imagem de capa (vinhos tinto e branco em taças).  
-- `bordo.png` – garrafa Pérgola Bordô.  
-- `espumante.jpg` – garrafa de espumante Salton Moscatel (imagem de produto).  
-- `toro-loco-rose.jpg` – garrafa Toro Loco Rosé (imagem de produto). 
-- `bordo-2.jpg` – garrafa Concha y Toro Gran Reserva(imagem de produto).  
-- `branco.jpg` – garrafa de vinho branco (imagem de produto).  
-- `branco-2.jpg` – garrafa de vinho branco (imagem de produto).  
-- `rose.jpg` - garrafa de vinho rose (imagem de produto).
-- `image-0.webp` - garrafa de vinho gran reserva (imagem de produto).
-- `confirmado.gif` - gif de check.
-- `Chatue-Grand.jpg` - garrafa de vinho Chatue Grand (imagem de produto).
-- `casillero-del-diablo.webp` - garrafa de vinho bordô (imagem de produto).
-- `LOGO.png` - Logo da empresa
-
- **Uso de marcas/imagens**: as imagens são meramente ilustrativas e pertencem aos respectivos titulares. Mantenha créditos e direitos conforme aplicável.
+- **HTML5** e **CSS3** (sem JavaScript).
 
 ---
 
-##  Tecnologias
+## Efeitos visuais, animações e transições (CSS)
 
-- **HTML5** e **CSS3** (sem back‑end).
+O site usa **efeitos leves, 100% em CSS**, para feedback visual e micro‑interações.
+
+### 1) Estados de *hover* (links, botões e cards)
+- **Transições suaves** em `color`, `background-color`, `box-shadow` e `transform` (200–300ms; `ease`/`ease-in-out`).
+- **Cards de produto** e **imagens** ganham leve **escala** e/ou **sombra** ao passar o mouse.
+
+```css
+/* Transições padrão */
+:root { --t: .25s ease; }
+.nav a, .btn, .card, .card img { transition: all var(--t); }
+
+/* Hover em links do menu */
+.nav a:hover { color: #8B0000; text-decoration: underline; }
+
+/* Hover em cards de produto */
+.card:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 10px 24px rgba(0,0,0,.12); }
+.card:hover img { filter: contrast(1.03) saturate(1.02); }
+```
+
+### 2) Foco de acessibilidade (*focus states*)
+- Realce visível para navegação por teclado (ex.: `outline`/`box-shadow`).
+
+```css
+:where(a, button, input):focus-visible { outline: 3px solid #8B0000; outline-offset: 2px; }
+```
+
+### 3) Separadores e micro‑animações visuais
+- Separadores de seção com linhas/asteriscos estilizados.
+- **Confirmação** usando `Confirmado.gif` em telas de compra/confirmar (animação via GIF).
+
+```css
+.hr { height: 1px; background: linear-gradient(90deg, transparent, #8B0000, transparent); opacity: .5; }
+```
+
+### 4) Formulários (página de Login/Registrar‑se)
+- *Hover/focus* em campos e botões com transição de cor/borda.
+
+```css
+input, select { transition: border-color .2s ease, box-shadow .2s ease; }
+input:focus { border-color: #8B0000; box-shadow: 0 0 0 3px rgb(139 0 0 / .15); }
+.btn-primary { background: #8B0000; color: #fff; }
+.btn-primary:hover { filter: brightness(1.05); }
+```
+
+> **Notas**
+> - Efeitos foram implementados apenas com **CSS** para manter simplicidade e desempenho.
+> - A duração padrão sugerida é **200–300ms** para transições perceptíveis sem distrair.
 
 ---
 
 ## Executar localmente
 
-1. Clone o repositório e abra o projeto na sua máquina.  
-2. Abra o arquivo `index.html` diretamente no navegador (duplo clique ou via servidor local).
-
-> Opcional: use uma extensão de *Live Server* para auto‑reload durante a edição.
+1. Clone o repositório.  
+2. Abra `index.html` no navegador (duplo clique) ou rode com um *Live Server* para recarregamento automático.
 
 ---
 
-##  Deploy (GitHub Pages)
+## Deploy (GitHub Pages)
 
-1. No repositório, acesse **Settings › Pages**.  
-2. Em **Source**, escolha **Deploy from a branch**.  
-3. Selecione **branch** (ex.: `main`) e a **pasta** (`/` para raiz ou `docs/`, se aplicável).  
-4. Salve. Aguarde a publicação em uma URL do tipo: `https://USUÁRIO.github.io/NOME_DO_REPO/`.
+1. Repositório → **Settings › Pages**.  
+2. **Source**: *Deploy from a branch*.  
+3. Selecione `branch` (ex.: `main`) e **pasta** (`/` raiz ou `docs/`).  
+4. Publicação em URL do tipo: `https://USUÁRIO.github.io/NOME_DO_REPO/`.
 
-Para projetos que usam pastas como `docs/` ou geradores estáticos (ex.: Jekyll/Quarto), adicione um arquivo `.nojekyll` na raiz para evitar o processamento automático.
+> Para projetos com `docs/` ou geradores estáticos, adicione `.nojekyll` na raiz.
 
 ---
 
@@ -148,27 +178,28 @@ Para projetos que usam pastas como `docs/` ou geradores estáticos (ex.: Jekyll/
 
 - Páginas internas estáticas (ex.: *Carrinho* apenas ilustrativo).  
 - Link de **Vídeos** abre conteúdo externo (YouTube).  
-- Página de produto de exemplo: **Chateau Grand Puy Lacoste 750ml** com preço exibido.
+- Páginas de **produto** são exemplos com preço/imagem.
 
 ---
 
 ## Roadmap (ideias de evolução)
 
-- Carrinho funcional com JavaScript + `localStorage` (ou back‑end leve).  
-- Página de **produto** mais completa (descrição, ficha técnica, avaliações).  
-- Catálogo dinâmico (JSON/API fake) e filtros por uva, país, faixa de preço.  
-- Ajustes de **acessibilidade** (contraste, navegação por teclado, `aria-*`).  
-- **SEO**: `<title>`, `meta description`, Open Graph/Twitter Cards e favicon.  
-- Otimização de imagens (compressão, formatos modernos e `loading="lazy"`).
+- Carrinho funcional com JavaScript + `localStorage` (ou back‑end leve).
+- Página de produto com ficha técnica, avaliações e recomendações.
+- Catálogo dinâmico (JSON/API fake) e filtros por uva, país e faixa de preço.
+- Acessibilidade: contraste, navegação por teclado, atributos `aria-*` complementares.
+- **SEO**: `<title>`, meta description, Open Graph/Twitter Cards e favicon.
+- Otimização de imagens (compressão, `loading="lazy"`, formatos modernos).
 
 ---
 
 ## Licença
 
-Nenhum arquivo de licença.
+Sem arquivo de licença.
 
 ---
 
 ## Créditos
 
-Projeto educacional/demonstração. Conteúdos de terceiros (marcas, rótulos, imagens) permanecem com seus respectivos proprietários.
+Projeto educacional/demonstração. Marcas, rótulos e imagens pertencem aos seus respectivos proprietários.
+
